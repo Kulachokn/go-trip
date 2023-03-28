@@ -1,0 +1,40 @@
+<%= render "shared/navbar" %>
+<div class="container">
+  <h1 id="nametag">Hi <%= @user.first_name %>!</h1>
+
+  <div id="search" class="search d-flex justify-content-center align-items-center">
+    <%= form_with url: trips_path, method: :get, class: "d-flex form-search" do %>
+      <%= text_field_tag :query,
+        params[:query],
+        placeholder: "Search trips"
+      %>
+      <%= submit_tag "", class: "btn-search" %>
+      <i class="fa-solid fa-magnifying-glass"></i>
+    <% end %>
+  </div>
+
+  <div class ="add-trip">
+    <%= link_to new_trip_path do %>
+      <i class="fa-solid fa-plus"></i>
+    <% end %>
+  </div>
+
+
+
+  <div class="wrapper">
+    <h2 class="index-header">Your upcoming trips</h2>
+      <div class="cards">
+        <% @upcoming.each do |trip| %>
+          <%= render "shared/card_trip", trip:trip %>
+        <% end %>
+      </div>
+
+    <h2 class="index-header"> Your previous trips </h2>
+        <div class="cards">
+        <% @previous.each do |trip| %>
+          <%= render "shared/card_trip", trip:trip %>
+        <% end %>
+        </div>
+  </div>
+</div>
+<%= render "shared/footer" %>

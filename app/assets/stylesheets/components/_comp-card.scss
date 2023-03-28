@@ -1,0 +1,73 @@
+.comp-card-info-tra p,
+.comp-card-info-act p,
+.comp-card-info-acc p {
+  line-height: 1.5;
+}
+
+.comp-card-info-act,
+.comp-card-info-tra,
+.comp-card-info-acc {
+  align-content: center;
+  text-align: center;
+  padding: 40px 20px;
+  width: 100%;
+  height: 230px;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.comp-card-info-act {
+  background-color: #5A7684;
+}
+
+.comp-card-info-tra {
+  background-color: #3A506B;
+}
+
+.comp-card-info-acc {
+  background-color: #0B132B;
+}
+
+.spaceholder {
+  text-align: center;
+  line-height: 2;
+  letter-spacing: 8px;
+  font-weight: 500;
+  opacity: 70%;
+  padding: 0px 50px;
+  font-size: 20px;
+}
+
+.fa-calendar-plus {
+  color: #5A7684;
+  font-size: 70px;
+  opacity: 30%;
+  margin-top: 10px;
+}
+
+.box {
+  margin: 50px 0px;
+}
+
+.tra-items {
+  margin-bottom: 20px;
+}
+
+.acc-items {
+  margin-bottom: 20px;
+}
+
+.act-items {
+  margin-bottom: 20px;
+}
+
+.card-icon {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 30px;
+  opacity: 80%;
+}
+
+.fa-pen {
+  color: white;
+}

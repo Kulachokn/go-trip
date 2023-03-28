@@ -1,0 +1,99 @@
+.transport_mode-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.transport_mode-item {
+  flex: 0 0 15%;
+}
+
+.transport_mode-selector {
+  position: absolute;
+  transform: scale(0);
+}
+
+.transport_mode-selector + label {
+  display: block;
+  cursor: pointer;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 22px;
+  text-align: center;
+  padding: 10px 5px 10px 5px;
+  border: 1px solid #EAEAEA;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.transport_mode-selector:checked + label {
+  color: white !important;
+}
+
+
+#transportation_transport_mode_flight + label {
+  color:grey;
+}
+
+#transportation_transport_mode_flight:checked + label {
+  background-color: grey;
+  border-color: grey;
+}
+
+
+#transportation_transport_mode_train + label {
+  color: grey;
+}
+
+#transportation_transport_mode_train:checked + label {
+  background-color: grey;
+  border-color: grey;
+}
+
+
+#transportation_transport_mode_boat + label {
+  color: grey;
+}
+
+#transportation_transport_mode_boat:checked + label {
+  background-color: grey;
+  border-color: gray;
+}
+
+#transportation_transport_mode_bike + label {
+  color: grey;
+}
+
+#transportation_transport_mode_bike:checked + label {
+  background-color: grey;
+  border-color: grey;
+}
+
+#transportation_transport_mode_car + label {
+  color: grey;
+}
+
+#transportation_transport_mode_car:checked + label {
+  background-color: grey;
+  border-color: grey;
+}
+
+#transportation_transport_mode_campervan + label {
+  color: grey;
+}
+
+#transportation_transport_mode_campervan:checked + label {
+  background-color: grey;
+  border-color: grey;
+}
+
+.transportation_form{
+  padding: 15% 10%;
+  background-color: #3A506B;
+  color: white
+}
+
+#transportation_ride{
+  background-color: #3A506B;
+  color: white;
+}

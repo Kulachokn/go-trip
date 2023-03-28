@@ -1,0 +1,137 @@
+.accommodation_mode-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.accommodation_mode-item {
+  flex: 0 0 15%;
+}
+
+.accommodation_mode-selector {
+  position: absolute;
+  transform: scale(0);
+}
+
+.accommodation_mode-selector + label {
+  display: block;
+  cursor: pointer;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 22px;
+  text-align: center;
+  padding: 10px 5px 10px 5px;
+  border: 1px solid #EAEAEA;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.accommodation_mode-selector:checked + label {
+  color: white !important;
+}
+
+
+#accommodation_accommodation_mode_hotel + label {
+  color: grey;
+}
+
+#accommodation_accommodation_mode_hotel:checked + label {
+  background-color: grey;
+  border-color: grey;
+}
+
+
+#accommodation_accommodation_mode_hostel + label {
+  color: grey;
+}
+
+#accommodation_accommodation_mode_hostel:checked + label {
+  background-color: grey;
+  border-color: grey;
+}
+
+
+#accommodation_accommodation_mode_appartment + label {
+  color: grey;
+}
+
+#accommodation_accommodation_mode_appartment:checked + label {
+  background-color: grey;
+  border-color: grey;
+}
+
+#accommodation_accommodation_mode_airbnb + label {
+  color: grey;
+}
+
+#accommodation_accommodation_mode_airbnb:checked + label {
+  background-color: grey;
+  border-color: grey;
+}
+
+#accommodation_accommodation_mode_camping + label {
+  color: grey;
+}
+
+#accommodation_accommodation_mode_camping:checked + label {
+  background-color: grey;
+  border-color: grey;
+}
+
+#accommodation_accommodation_mode_castle + label {
+  color: grey;
+}
+
+#accommodation_accommodation_mode_castle:checked + label {
+  background-color: grey;
+  border-color: grey;
+}
+
+
+.save {
+  background-color: #D9D9D9;
+  color: black;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-style: none;
+  margin: auto;
+  width: 50%;
+}
+
+.save:hover {
+  background-color: white;
+  color: black;
+  border-radius: 4px;
+  border-color: grey;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-style: none;
+}
+
+.form-accommodation {
+  padding: 15% 10%;
+  background-color: #0B132B;
+  color: white;
+}
+
+#h1-color {
+  color: white;
+}
+
+.form-activities {
+  padding: 15% 10%;
+  background-color: #5A7684;
+  color: white;
+}
+
+.form-select{
+  background-color: #D9D9D9;
+  border-radius: 4px;
+  color:grey;
+}
+
+.mapboxgl-ctrl-geocoder input {
+  background-color: #D9D9D9;
+  border-radius: 4px;
+}

@@ -1,0 +1,76 @@
+#nametag {
+  padding: 40px 40px;
+  font-size: 50px;
+}
+
+.index-header {
+  text-align: center;
+  padding: 40px 0;
+  font-size: 25px;
+}
+
+.fa-plus {
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  background-color: #5A7684;
+  bottom: 0;
+  border-radius: 50%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: white;
+  line-height: 65px;
+  text-align: center;
+  font-size: 23px;
+  box-shadow: 0 10px 25px rgba(90, 118, 132, 0.6);
+}
+
+.add-trip {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  bottom: 0;
+  right: 0;
+  margin: 35px 25px;
+  z-index: 100;
+}
+
+.add-trip a {
+  color: white;
+}
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+  .trips {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .trips {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .trips {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .trips {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .trips {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

@@ -1,0 +1,20 @@
+<div class="form-accommodation">
+  <%= link_to trip_path(@trip), class: "d-flex justify-content-start text-decoration-none" do %>
+    <i class="fa-solid fa-arrow-left" id="back_button"></i>
+  <% end %>
+  <h1 class="text-center fs-1 py-4" id="h1-color">Add your stay</h1>
+
+  <%= render "form_acc", accommodation: @accommodation, trip: @trip %>
+
+</div>
+
+
+
+<%#= f.input :accommodation_mode,
+    as: :radio_buttons,
+    collection_wrapper_tag: 'div',
+    collection_wrapper_class: 'accommodation_mode-wrapper',
+    item_wrapper_class: 'accommodation_mode-item',
+    input_html: {class: 'accommodation_mode-selector'},
+    legend_tag: false,
+    collection: Accommodation::CATEGORIES %>
