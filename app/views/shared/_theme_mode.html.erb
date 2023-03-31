@@ -1,0 +1,9 @@
+<% if cookies[:theme] == "light" %>
+  <%= link_to root_path(theme: "dark"), class: "mode-icon"  do %>
+    <i class="fa-solid fa-moon"></i>
+  <% end %>
+<% else %>
+  <%= link_to root_path(theme: "light"), class: "mode-icon" do %>
+    <i class="fa-regular fa-sun"></i>
+  <% end %>
+<% end %>

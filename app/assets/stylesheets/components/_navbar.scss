@@ -22,3 +22,13 @@
 .profile-avatar {
   border-radius: 50%;
 }
+
+.nav-avatar-theme {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 15px;
+}

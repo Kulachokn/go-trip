@@ -4,11 +4,18 @@
       <i class="fi fi-tr-earth-africa"></i>
     <% end %>
     <% if user_signed_in? %>
-      <% if current_user.photo.attached? %>
-        <%= cl_image_tag current_user.photo.key, class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
-      <% else %>
-        <i class="fa-solid fa-circle-user" id="navbarDropdown" data-bs-toggle="dropdown"></i>
-      <% end %>
+      <ul class="nav-avatar-theme">
+        <li class="nav-item">
+          <%= render "shared/theme_mode" %>
+        </li>
+        <li class="nav-item">
+          <% if current_user.photo.attached? %>
+            <%= cl_image_tag current_user.photo.key, class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+          <% else %>
+            <i class="fa-solid fa-circle-user" id="navbarDropdown" data-bs-toggle="dropdown"></i>
+          <% end %>
+        </li>
+      </ul>
       <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
         <%# <%= link_to "Add a trip", new_trip_path, class: "dropdown-item" %>
         <%= link_to "Log out", destroy_user_session_path, data: {turbo_method: :delete}, class: "dropdown-item" %>

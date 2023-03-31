@@ -1,0 +1,21 @@
+body.light {
+  background-color: white;
+}
+body.dark {
+  background-color:#778899;
+  h1, h2 {
+    color: white;
+  }
+}
+
+.mode-icon {
+  text-decoration: none;
+  color: #3A506B;
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid #3A506B;
+  display: flex;
+  width: 31px;
+  justify-content: center;
+}
